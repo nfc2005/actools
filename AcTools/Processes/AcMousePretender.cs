@@ -46,6 +46,8 @@ namespace AcTools.Processes {
                         return new Point(50, 150);
                     case Screen1280X720:
                         return new Point(50, 170);
+                    case Screen1366X768:
+                        return new Point(50, 173);
                     default:
                         return new Point(40, (150d / 1000d * screen.Y).RoundToInt());
                 }
@@ -61,6 +63,8 @@ namespace AcTools.Processes {
                         return new Point(960, 468);
                     case Screen1280X720:
                         return new Point(640, 290);
+                    case Screen1366X768:
+                        return new Point(680, 312);
                     default:
                         return new Point(screen.X / 2, screen.Y / 2 - 72);
                 }
